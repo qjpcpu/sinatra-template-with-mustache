@@ -6,7 +6,7 @@ Root=File.expand_path("../..",__FILE__)
 require 'sinatra/base'
 require 'mustache/sinatra'
 
-class App < Sinatra::Base
+class MustacheApp < Sinatra::Base
     register Mustache::Sinatra
     set :mustache, {
         :views     => 'views/',
